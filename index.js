@@ -232,11 +232,11 @@ console.log(artists[8].name);
  
  Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(array, number) {
-  /*Your Code Here*/ `the artists at index" ${.this.id} is ${.this.name}`
+function getArtistByIndex() {
+ return `the artists at index at index ${this.id} is ${this.name}`;
 }  
 
-
+console.log(getArtistByIndex(artists[8]));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use get20s to do the following: 
@@ -246,9 +246,18 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
+
+
 function get20s(/*Your Code Here*/){
-  /*Your Code Here*/
+  let split = artists.years.Split("-")
+
 }
+
+years "19" and "19"
+
+// split method 
+
+console.log(get20s(split))
 
 
 
@@ -261,9 +270,18 @@ function get20s(/*Your Code Here*/){
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(array, number){
-   /*Your Code Here*/ .shift
+function removeArtist(array){
+for( let i=0 ; i<19; i--;){
+  return ()
 }
+
+//  array[index].shift=array;
+ 
+
+}
+console.log(removeArtist);
+
+
    
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -282,18 +300,12 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(array){
-array.push(
-  { 
-    id: 20,
-    name: "Katharina Chiu", 
-    years: "1992 - Present",
-    genre: "Web Design", 
-    nationality: "German & Chinese",
-    bio: "Hi I'm Katharina. I'm learning about web development",
-  }  
-)
-return {arto}
+function addArtist(array, id, name, years, genre, nationality, bio){
+array.push({id, name, years, genre, nationality, bio});
+return array;
+}
+console.log(addArtist(artists, "Katharina-Chiu", "1992-Present", "Web Design", "German and Chinese", "Hi I'm Katharina. I'm learning about web development" ));
+ 
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -303,10 +315,26 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
+function lotsOfArt(array){
+  return array (artists.paintings >= 100 );
 }
 
+console.log(array.artists)
+
+
+
+// 
+//   for(let i=0; i < array.length; i++) {
+//     if(array[i].includes(search)){
+//       return arr[i];
+//     }
+//   }
+// }
+
+// return
+
+
+// console.log(artists, i++)
 
 
 
