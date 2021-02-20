@@ -250,12 +250,9 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(/*Your Code Here*/){
   let split = artists.years.Split("-")
+  if ({birthYear >= 1900 && birthYear <= 1999 && deathYear>=1900 && deathYear <= 1999}
 
 }
-
-years "19" and "19"
-
-// split method 
 
 console.log(get20s(split))
 
@@ -273,7 +270,8 @@ console.log(get20s(split))
 function removeArtist(array){
 for( let i=0 ; i<19; i--;){
   return ()
-}
+
+}artists.shift
 
 //  array[index].shift=array;
  
@@ -315,7 +313,14 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(array){
+function lotsOfArt(array, search){
+
+
+  for(let i =0; i <array.length; i++) {
+    if (array[i]>=100)) {
+      return arr[i];
+    }
+  }
   return array (artists.paintings >= 100 );
 }
 
